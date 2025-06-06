@@ -1,5 +1,5 @@
 import os
-bot.run(os.environ['BOT_TOKEN'])
+bot.run(os.environ['BOT_ID'])
 
 import discord
 from discord.ext import commands
