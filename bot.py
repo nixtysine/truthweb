@@ -1,3 +1,6 @@
+import os
+bot.run(os.environ['BOT_TOKEN'])
+
 import discord
 from discord.ext import commands
 
@@ -14,6 +17,3 @@ async def on_ready():
 async def ping(ctx):
     latency = round(bot.latency * 1000)  # Convert to mils
     await ctx.send(f'Pong! 🏓 {latency}ms')
-
-
-bot.run('MTM1NDk5MTYyMjQ3MTAyNDY5MQ.GAffDk.h9doTPfOaLRkNtqMAgl6Ks1r4om3OwiCG-SsIk')
